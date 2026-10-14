@@ -1,0 +1,63 @@
+.bottom-navigation {
+  position: fixed;
+  z-index: 5;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  min-height: calc(4.7rem + env(safe-area-inset-bottom));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 0.5rem 0.5rem max(0.5rem, env(safe-area-inset-bottom));
+  border-top: 1px solid rgb(255 255 255 / 14%);
+  background: rgb(15 17 15 / 94%);
+  backdrop-filter: blur(18px);
+}
+
+.bottom-navigation__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.22rem;
+  color: rgb(255 255 255 / 60%);
+  font-size: 0.69rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.bottom-navigation__link svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: transparent;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.bottom-navigation__link.is-active {
+  color: #d7f274;
+}
+
+.bottom-navigation__link.is-active svg {
+  fill: currentColor;
+}
+
+.bottom-navigation__link:focus-visible {
+  outline: 2px solid #d7f274;
+  outline-offset: -3px;
+}
+
+.saved-page .bottom-navigation {
+  border-color: #e1e6de;
+  background: rgb(255 255 255 / 94%);
+}
+
+.saved-page .bottom-navigation__link {
+  color: #798276;
+}
+
+.saved-page .bottom-navigation__link.is-active {
+  color: #316a4d;
+}
