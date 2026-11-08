@@ -353,7 +353,7 @@ The upload process:
 
 **Mae_codes**
 
-Full-Stack Web Developer
+Mern-Stack Web Developer
 
 - GitHub: [@maecodes151](https://github.com/maecodes151)
 - Repository: [Dishify](https://github.com/maecodes151/Dishify)
